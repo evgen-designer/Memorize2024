@@ -2,20 +2,20 @@
 //  ContentView.swift
 //  Memorize2024
 //
-//  Created by Mac on 28/12/2024.
+//  Created by Eugene Evgen on 28/12/2024.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(lineWidth: 3)
+            Text("Hello, CS193p!")
         }
-        .padding()
+        .padding(.horizontal)
+        .foregroundColor(.red)
     }
 }
 
